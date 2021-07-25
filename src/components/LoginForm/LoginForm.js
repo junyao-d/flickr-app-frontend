@@ -57,7 +57,7 @@ function LoginForm(props) {
     props.updateTitle("Register");
   };
   return (
-    <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
+    <div className="w3-card-4 card col-12 col-lg-4 login-card mt-2 hv-center">
       <form>
         <div className="form-group text-left">
           <label>User Name</label>

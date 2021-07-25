@@ -12,6 +12,6 @@
 # below:
 .git
 .gitignore
-
+.vscode
 # Node.js dependencies:
 node_modules/

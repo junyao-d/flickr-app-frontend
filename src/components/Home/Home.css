@@ -4,6 +4,7 @@ body {
 }
 
 .masonry {
+  margin-top:20px;
   column-count: 4;
   column-gap: 0;
 }
@@ -32,4 +33,8 @@ body {
   background-color: #000;
   color: #fff;
   content: counter(count);
+}
+
+.searchFrame {
+  padding: 20px;
 }
