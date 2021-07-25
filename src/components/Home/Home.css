@@ -10,9 +10,8 @@ body {
 }
 
 .item {
-  padding: 2px;
+  padding: 10px;
   position: relative;
-  counter-increment: count;
 }
 
 .item img {
@@ -24,17 +23,28 @@ body {
 .item::after {
   position: absolute;
   display: block;
-  top: 2px;
-  left: 2px;
+  top: 5px;
+  left: 5px;
   width: 24px;
   height: 24px;
   text-align: center;
   line-height: 24px;
   background-color: #000;
   color: #fff;
-  content: counter(count);
 }
 
 .searchFrame {
-  padding: 20px;
+  padding: 50px;
+}
+
+.searchBox {
+  width:80%
+}
+
+.inputBox {
+  width:600px;
+}
+
+.photoPadding {
+  padding: 10px;
 }

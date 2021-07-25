@@ -94,29 +94,30 @@ function Home(props) {
   return (
     <div className="container">
       <div className="card col-12 mt-2 hv-center w3-card-4 searchFrame">
-        <form className="search-form" onSubmit={handleSubmitClick}>
-          <div className="form-group text-left">
+       
+      {/* Search Form */}
+        
+          <form className="row" onSubmit={handleSubmitClick}>
             <input
               id="search"
               type="search"
               name="search"
-              className="form-control"
-              placeholder="Search Flickr by tags"
+              className="form-control mr-sm-2 inputBox"
+              placeholder="Search Flickr by Tags"
               onChange={handleChange}
               required
               value={state.search}
             />
-            <button type="submit" className="btn btn-primary">
-              <svg fill="#fff" height="24" viewBox="0 0 23 23" width="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-                <path d="M0 0h24v24H0z" fill="none" />
-              </svg>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
             </button>
-            <small className="form-text text-muted">
-              Enter tags you want to search, sperated by comma, tag mode is any
-            </small>
-          </div>
-        </form>
+          </form>
+      
+
+        <small className="form-text text-muted">
+          Enter tags you want to search, sperated by comma, tag mode is any
+        </small>
+
       </div>
       <div>{state.searchResult}</div>
       <div>
