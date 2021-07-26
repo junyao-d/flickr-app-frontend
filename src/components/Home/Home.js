@@ -97,28 +97,29 @@ function Home(props) {
        
       {/* Search Form */}
         
-          <form className="row" onSubmit={handleSubmitClick}>
+          <form className="row formBox" onSubmit={handleSubmitClick}>
             <input
               id="search"
               type="search"
               name="search"
-              className="form-control mr-sm-2 inputBox"
+              className="form-control mr-sm-2 searchBox"
               placeholder="Search Flickr by Tags"
               onChange={handleChange}
               required
               value={state.search}
             />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
               Search
             </button>
           </form>
-      
-
+    
         <small className="form-text text-muted">
           Enter tags you want to search, sperated by comma, tag mode is any
         </small>
-
       </div>
+
+
+
       <div>{state.searchResult}</div>
       <div>
         <div className="masonry">{state.photosDisplay}</div>

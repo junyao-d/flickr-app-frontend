@@ -10,7 +10,7 @@ body {
 }
 
 .item {
-  padding: 10px;
+  padding: 3px;
   position: relative;
 }
 
@@ -37,14 +37,13 @@ body {
   padding: 50px;
 }
 
+.formBox {
+  display: flex;
+  justify-content: center;
+  width:100%
+}
+
 .searchBox {
-  width:80%
+  width:70%;
 }
 
-.inputBox {
-  width:600px;
-}
-
-.photoPadding {
-  padding: 10px;
-}

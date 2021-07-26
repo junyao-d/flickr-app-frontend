@@ -41,11 +41,16 @@ function RegistrationForm(props) {
                     }
                 })
                 .catch(function (error) {
-                    if (error.response.status === 400) {
-                        props.showError("Username already exists");
-                    } else {
-                        props.showError("Some error occurred");
-                    }
+                    try {
+                        if (error.response.status === 400) {
+                          props.showError("Username already exists");
+                        } else {
+                          props.showError("Some error occurred");
+                        }
+                      } catch (error) {
+                        props.showError("Some error occurred; Username may already exist");
+                        console.log(error);
+                      }
                 });
         } else {
             props.showError('Please enter valid username and password')
